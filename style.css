@@ -81,14 +81,12 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-
 .row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
 }
-
 .row > * {
     padding: 0 10px;
 }
@@ -121,9 +119,6 @@
 /*-------------------
     GENERAL
 -------------------*/
-.bg-gray {
-    background-color: #d3d3d3;
-}
 
 /*-------------------
     HEADER
@@ -133,27 +128,36 @@
     background-color: #3161e0;
 }
 
-.header-top a{
+.header-top li a{
     color: white;
-
+    text-decoration: none;
+    padding: 0 4px;
 }
     
 .button{
     border-radius: 18px;
     background-color: white;
     border-color: white;
+    padding: 10px 10px;
+    color: black;
 }
 
-.main-nav ul {
+.button-black{
+    border-radius: 18px;
+    background-color: #23272a;
+    border-color: #23272a;
+    padding: 10px 10px;
+    color: white;
+}
+
+.header-top ul {
     display: flex;
     list-style: none;
     justify-content: center;
 }
-.main-nav li {
-    padding: 0 4px;
-}
-.main-nav li a {
-    text-decoration: none;
+
+.hero-container p{
+    font-size: 15px;
 }
 
 .header-top .login {
@@ -161,14 +165,19 @@
 }
 
 .hero-container  {
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
+    padding: 0%;
+    position: relative;
 }
 
 .hero {
-    max-width: 920px;
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
 }
 
 /*-------------------
@@ -199,3 +208,7 @@ footer .container:first-child {
     padding: 20px 0;
     justify-content: space-between;
 } 
+
+#{
+    
+}
