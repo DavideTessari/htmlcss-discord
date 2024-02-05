@@ -6,67 +6,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/*-------------------
-    DEBUG
--------------------*/
-.debug .header-top {
-    background-color: #add8e6;
-}
-.debug .header-top .row {
-    background-color: #daa520;
-    line-height: 40px;
-}
-.debug [class^="col"], .debug .hero, .debug .footer-bottom > *  {
-    border: 2px dashed #000;
-}
-.debug [class^="col"] [class^="col"] {
-    border-color: #fff;
-}
-.debug .hero-container {
-    background-color: #00008b;
-    height: 600px;
-}
-.debug .hero {
-    background-color: #ee82ee;
-}
-.debug section .row {
-    height: 500px;
-}
-.debug section .col-70 {
-    background: #1e90ff;
-}
-.debug section .col-30 {
-    background: #ffc0cb;
-}
-.debug section:last-child .row {
-    height: 900px;
-}
-.debug section:last-child .col-100 {
-    background-color: #228b22;
-}
-.debug footer {
-    background-color: #23272a;
-}
-.debug .footer-top {
-    height: 580px;
-}
-.debug .footer-top .col-30 {
-    background-color: #f08080;
-}
-.debug .footer-top .col-70 {
-    background-color: #20b2aa;
-}
-.debug .footer-top .col-70 .row {
-    height: 100%;
-}
-.debug .footer-bottom {
-    background-color: #7fffd4;
-}
-.debug .footer-bottom > * {
-    background-color: #ffb6c1;
-    padding: 10px;
-}
 /*-------------------
     GRID LAYOUT
 -------------------*/
@@ -150,6 +89,14 @@
     color: white;
 }
 
+.button-azzurro{
+    border-radius: 18px;
+    background-color: #8ea1e1;
+    border-color: #8ea1e1;
+    padding: 10px 10px;
+    color: white;
+}
+
 .header-top ul {
     display: flex;
     list-style: none;
@@ -199,16 +146,18 @@ section {
     padding-bottom: 40px;
 }
 
-footer .container:first-child {
-    border-bottom: 2px solid #fff;
-}
-
 .footer-bottom {
     margin-top: 30px;
     padding: 20px 0;
     justify-content: space-between;
 } 
 
-#{
-    
+.footer-top .col-70 > *{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+footer{
+    background-color: #23272a;
 }
